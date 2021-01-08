@@ -2,6 +2,8 @@
 using System.IO;
 using VideoLibrary;
 
+// TODO: Use something like a try catch block to display a more human friendly error message when an invalid link is pasted.
+
 namespace YTDownloader
 {
     class Program
