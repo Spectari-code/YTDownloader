@@ -6,12 +6,12 @@ using VideoLibrary;
 
 namespace YTDownloader
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var youTube = YouTube.Default; // starting point for Youtube actions.
-            
+
             Console.WriteLine("Youtube Downloader\nEnter the youtube link: ");
             var id = Console.ReadLine(); //id is the link
             Console.WriteLine("Downloading...");
@@ -20,7 +20,7 @@ namespace YTDownloader
             // Add Download path.
             File.WriteAllBytes(@"C:\Users\Bligh\Downloads\" + video.FullName, video.GetBytes());
             Console.WriteLine("Finished.");
-            
+
             Console.ReadKey();
             Console.WriteLine("Closing...");
         }
